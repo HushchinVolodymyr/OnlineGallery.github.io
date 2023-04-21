@@ -99,3 +99,28 @@ main{
     display: block;
     top: 545px;
 }
+
+.popular_pictures{
+    position: relative;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pop_pic{
+    display: flex;
+    height: 200px;
+    width: 300px;
+}
+
+.fisrt_line{
+    display: flex;
+    justify-content: space-around;
+}
+
+.second_line{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
