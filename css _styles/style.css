@@ -70,34 +70,32 @@ body {
 }
 
 .text_information h2{
-    font-size: small;
+    font-size: smaller;
 }
 
 main{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.popular_pictures{
+.most_popular_pictures{
+    display: flex;
+    justify-content: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.25);
-    height: 596px;
+    height: 600px;
 }
 
-.popular_pictures img{
+.most_popular_pictures img{
     position: absolute;
     display: block;
     width: 886px;
     height: 511px;
-    left: auto;
-    right: auto;
     top: 30px;
 }
 
-#popular_pictures_description{
+#most_popular_pictures_description{
     position: absolute;
     font-size: 32;
     display: block;
-    left: auto;
-    right: auto;
-    top: 554px;
+    top: 545px;
 }
