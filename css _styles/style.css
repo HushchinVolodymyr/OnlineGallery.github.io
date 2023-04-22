@@ -101,26 +101,78 @@ main{
 }
 
 .popular_pictures{
+    justify-content: center;
     position: relative;
-    width: 1080px;
+    width: 886px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
+    top: 30px;
 }
 
-.pop_pic{
-    display: flex;
-    height: 200px;
-    width: 300px;
+.pop_pic{ 
+    height: 230px;
+    width: 350px;
 }
 
-.fisrt_line{
-    display: flex;
-    justify-content: space-around;
+.first_line{
+    width: 886px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first_picture second_picture";
+    column-gap: 186px;
 }
 
 .second_line{
-    display: flex;
-    justify-content: space-around;
-    
+    width: 886px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "third_picture fourth_picture";
+    column-gap: 186px;
+    margin-top: 20px;
+}
+
+.first_picture h2, .second_picture h2, .third_picture h2, .fourth_picture h2{
+    font-size: medium;
+    display: block;
+    text-align: center;
+}
+
+.pop_auth{
+    height: 322px;
+    width: 235px;
+    margin-top: 30px;
+}
+
+.popular_authors{
+    background-color:  rgba(255, 255, 255, 0.25);
+    height: 450px;
+}
+
+.row_auth{
+    width: 886px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first_author second_author third_author";
+    gap: 90.5px;
+}
+
+.first_author h2, .second_author h2, .third_author h2{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.footer_body{
+    background-color: rgb(44, 44, 44);
+    height: 100px;
 }
 
