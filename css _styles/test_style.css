@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Kurale;
+}
+
+.wrapper{
+    background-image: url("../images/landing/landing_background.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container{
+    max-width: 1033px;
+    margin: 0px auto;
+}
+
+/* ------------------------header style-------------------------------- */
+.header{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.header__logo_container{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.header__logo{
+    color: white;
+}
+
+.header__logo_container:hover{
+    scale: 1.1;
+}
+
+.header__logo:hover::after{
+    transition: 0.5s;
+}
+
+.search{
+    display: flex;
+}
+
+.header__serach{
+    height: 35px;
+    width: 290px;
+    border-radius: 30px;
+    outline: 0 !important;
+    align-items: center;
+    text-indent: 10px;
+    font-family: Kurale;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.header__serach:hover{
+    height: 39px;
+    width: 310px;
+    
+}
+
+.header__serach::placeholder{
+    font-family: Kurale;
+    font-size: large;
+}
+
+.header__user__information{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__photo{
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+}
+
+.user_name{
+    color: white;
+}
+
+.header__user__information img, div{
+    transition: 1s;
+}
+
+.header__user__information:hover img{
+    transform: translateX(-5px);
+}
+
+.header__user__information:hover div{
+    scale: 1.1;
+}
+
+/* -----------------------------header style----------------------------- */
+
+
+/* -----------------------------main style-------------------------------- */
+main{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular_picture_container{
+    height: auto;
+}
+
+.popular__pictures{
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.text_container{
+    height: 60px;
+    height: auto;
+}
+
+.picture_name{
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 1s;
+}
+/* -----------------------------main style-------------------------------- */
+
+
+/* ---------------------------adaptive part----------------------------- */
+@media (max-width: 620px){
+    /* ----------------------header style------------------------- */
+    .header__serach{
+        margin-left: 30px;
+        left: 10px;
+        display: block;
+        width: 170px;
+        margin: 0 auto;
+        height: 40px;
+        transition: 0.5;
+        text-indent: 5px;
+    }
+
+    .header__serach:hover{
+        margin-left: 50px;
+        width: 240px;
+    }
+
+    .header__logo_container{
+        width: 65px;
+    }
+
+    .header__logo{
+        transition: 0.5s;
+    }
+
+    .header__logo:hover{
+        margin-left: 5px;
+        scale: 1.1;
+    }
+
+    .header__user__information{
+        width: 120px;
+        position: relative;
+    }
+
+    .header__user__information img{
+        transform: translateX(60px);
+        transition: 1s;
+    }
+
+    .header__user__information div{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .header__user__information:hover img{
+        transform: translateX(-8px);
+        z-index: 1;
+    }
+
+    .header__user__information:hover div{
+        margin-right: 5px;
+        opacity: 1;
+        z-index: 0;
+    }
+    /* ----------------------header style------------------------- */
+
+    /* -----------------------------main style-------------------------------- */
+    .popular__pictures{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+
+    .picture_name{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    /* -----------------------------main style-------------------------------- */
+
+
+}  
+/* --------------------------adaptive part------------------------------ */
+   
