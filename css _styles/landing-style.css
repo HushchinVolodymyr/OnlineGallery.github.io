@@ -1,3 +1,4 @@
+/* ------------------zeroing----------------- */
 *,
 *::before,
 *::after{
@@ -48,12 +49,18 @@ body{
     background-position: center;
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 ._container{
     max-width: 1033px;
     margin: 0px auto;
 }
+
+/* ------------------zeroing----------------- */
+
 
 /* ------------------------header style-------------------------------- */
 .header{
@@ -121,6 +128,7 @@ body{
 }
 
 .user__photo{
+    
     height: 45px;
     width: 45px;
     border-radius: 30px;
@@ -146,6 +154,8 @@ body{
 
 
 /* -----------------------------main style-------------------------------- */
+
+/* --------------------poplar pictures---------------------- */
 main{
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -154,6 +164,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.background_popular_picture_container{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
 }
 
 .popular_picture_container{
@@ -179,7 +194,91 @@ main{
     text-align: center;
     transition: 1s;
 }
+/* --------------------poplar pictures---------------------- */
+
+/* ------------------------pictures------------------------- */
+.pictures_conatainer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pic{   
+    width: 100%;
+}
+
+.first_line{
+    max-width: 90%;
+    display: flex; 
+    justify-content: space-between;   
+}
+
+.first_picture, .second_picture{
+    width: 45%;
+    text-align: center;
+}
+
+.description_1, .description_2, .description_3, .description_4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.second_line{
+    margin-top: 15px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_picture, .fourth_picture{
+    width: 45%;
+    text-align: center;
+}
+/* ------------------------pictures------------------------- */
+
+/* ----------------popular authors------------------------- */
+.background_popular_authors_container{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.popular_authors_container{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.pop_auth{
+    max-width: 100%;
+}
+
+.row_auth{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first_author, .second_author, .third_author{
+    max-width: 30%;
+    text-align: center;
+}
+
+.first_author h2, .second_author h2, .third_author h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+
+
+/* ----------------popular authors------------------------- */
+
 /* -----------------------------main style-------------------------------- */
+
+/* -------------------footer---------------------------------- */
+.footer{
+    background-color: rgb(43, 43, 43);
+    padding: 70px;
+    margin-top: auto;
+}
+/* -------------------footer---------------------------------- */
 
 
 /* ---------------------------adaptive part----------------------------- */
@@ -242,6 +341,10 @@ main{
     /* ----------------------header style------------------------- */
 
     /* -----------------------------main style-------------------------------- */
+    .background_popular_picture_container{
+        padding-bottom: 3px;
+    }
+    
     .popular__pictures{
         max-width: 100%;
         max-height: 100%;
@@ -252,10 +355,41 @@ main{
         font-size: 20px;
         margin-top: 5px;
     }
+
+    /* ------------------------pictures------------------------- */
+    .pictures_conatainer{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .first_line, .second_line{
+        max-width: 100%;
+    }
+
+    .description_1, .description_2, .description_3, .description_4{
+        font-size: 15px;
+    }
+    /* ------------------------pictures------------------------- */
+    
+    /* ----------------popular authors------------------------- */
+    .row_auth{
+                max-width: 100%;
+            }
+
+            .popular_authors_container{
+                padding-top: 15px;
+            }
+
+            .first_author h2, .second_author h2, .third_author h2{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+
+    /* ----------------popular authors------------------------- */
     
     /* -----------------------------main style-------------------------------- */
 
 
 }  
-/* --------------------------adaptive part------------------------------ */
-   
+/* --------------------------adaptive part------------------------------ */ 
