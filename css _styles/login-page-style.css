@@ -207,6 +207,12 @@ body{
     font-size: 20px;
 }
 
+.go-to-register{
+    margin-left: 35%;
+    padding-top: 2%;
+    color: black;
+    transition: 1s;
+}
 
 .confirm-button{
     background-color: rgba(49, 49, 49, 0.3);
@@ -321,8 +327,8 @@ body{
     padding: 0;
 }
 
-.registration-checkbox{
-    font-size: 5%;
+.go-to-register{
+    margin-left: 0;
 }
 
 .confirm-button{
