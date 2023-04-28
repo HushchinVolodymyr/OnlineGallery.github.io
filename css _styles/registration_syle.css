@@ -153,11 +153,11 @@ body{
 /*-------------------------------main----------------------------*/
 .background{
     background-color: rgba(255, 255, 255, 0.5);
-    max-height: 110%;
+    max-height: 100%;
 }
 
 .registration-wrapper{
-    min-height: 100%;
+    max-height: 100%;
     padding: 60px;
     
 }
@@ -169,10 +169,14 @@ body{
     text-align: center;
     padding-top: 15%;
     border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .regist-text{
     font-size: 70px;
+    transition: 1s;
 }
 
 .inpt{
@@ -183,6 +187,11 @@ body{
     font-size: 20px;
     font-family: Kurale;
     outline: 0 !important;
+    transition: 1s;
+}
+
+.inpt:hover{
+    scale: 1.05;
 }
 
 .login-part{
@@ -202,15 +211,82 @@ body{
     font-size: 20px;
 }
 
+.chekbox{
+    padding-top: 2%;
+    display: flex;
+    margin-right: 30%;
+}
+
+.registration-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.registration-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+.registration-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+.registration-checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+.registration-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+
+.registration-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+
+.registration-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+.registration-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+.registration-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
 .confirm-button{
     background-color: rgba(49, 49, 49, 0.3);
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 20%;
     border-radius: 30px;
     height: 45px;
     width: 300px;
     font-family: Kurale;
     font-size: 25px;
+    transition: 1s;
+}
+
+.confirm-button:hover{
+    scale: 1.1;
+    background-color: rgba(49, 49, 49, 0.6);
+    color: white;
 }
 
 
@@ -219,8 +295,7 @@ body{
 /*-------------------------------footer--------------------------*/
 .footer{
     background-color: rgb(43, 43, 43);
-    padding: 70px;
-    margin-top: auto;
+    padding: 100%;
 }
 /*-------------------------------footer--------------------------*/
 
@@ -291,8 +366,35 @@ body{
 /*-------------------------------header--------------------------*/
 
 /*-------------------------------main----------------------------*/
+.registration-block-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
 
+.regist-text{
+    font-size: 60px;
+}
 
+.chekbox{
+    margin-right: 0;
+}
+
+.registration-wrapper{
+    padding: 0;
+}
+
+.registration-checkbox{
+    font-size: 5%;
+}
+
+.confirm-button{
+    width: 200px;
+}
+
+.footer{
+    padding: 50%;
+}
 
 /*-------------------------------main----------------------------*/
 
