@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css _styles/registration_syle.css">
+    <link href="images/icons/site-logo.png" rel="icon" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
     </style>
@@ -12,8 +13,47 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__logo_container">
+                    <a id="header__logo" href="index.html" class="header__logo">
+                        OnlineGallery
+                    </a>
+                </div>
+                
+                <div class="search">
+                    <input type="text" class="header__serach" placeholder="Пошук">
+                </div>
+                
+                <div class="header__user__information">
+                    <img class="user__photo" src="images/landing/MyLogo.jpg" alt="user_photo">
+                        <div class="user_name_text">
+                            <a id="username" class="user_name" href="registration_page.html">Username</a>
+                        </div>
+                </div>
+            </div>
+        </header>
+            
+        <main>
+            <div class="background">
+                <div class="registration-wrapper _container">
 
-        
+                    <div class="registration-block-container _container">
+                        <h1 class="regist-text">Реєстрація</h1>
+                        <div class="input-part">
+                            <input type="text" class="login-part inpt" placeholder="Логін">
+                            <input type="text" class="password-part inpt" placeholder="Пароль">
+                            <input type="text" class="confirm-password-part inpt" placeholder="Підвердіть пароль">
+                        </div>
+                        <button class="confirm-button">Підвердити</button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer"></footer>
+
     </div>
     <script src="scripts/script.js"></script>
 </body>

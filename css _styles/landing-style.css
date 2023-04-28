@@ -374,17 +374,17 @@ main{
     /* ----------------popular authors------------------------- */
     .row_auth{
                 max-width: 100%;
-            }
+    }
 
-            .popular_authors_container{
-                padding-top: 15px;
-            }
+    .popular_authors_container{
+        padding-top: 15px;
+    }
 
-            .first_author h2, .second_author h2, .third_author h2{
-                padding-top: 5px;
-                padding-bottom: 5px;
-                font-size: 15px;
-            }
+    .first_author h2, .second_author h2, .third_author h2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
 
     /* ----------------popular authors------------------------- */
     
