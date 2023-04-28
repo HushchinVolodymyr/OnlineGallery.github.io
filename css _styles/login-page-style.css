@@ -1,0 +1,345 @@
+/*--------------zeroing---------------*/
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Kurale;
+}
+
+.wrapper{
+    background-image: url("../images/registration-page/background.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+._container{
+    max-width: 1033px;
+    margin: 0px auto;
+}
+
+/*-----------------------------main style------------------------*/
+
+/*-------------------------------header--------------------------*/
+.header{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.header__logo_container{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.header__logo{
+    color: white;
+}
+
+.header__logo_container:hover{
+    scale: 1.1;
+}
+
+.header__logo:hover::after{
+    transition: 0.5s;
+}
+
+.search{
+    display: flex;
+}
+
+.header__serach{
+    height: 35px;
+    width: 290px;
+    border-radius: 30px;
+    outline: 0 !important;
+    align-items: center;
+    text-indent: 10px;
+    font-family: Kurale;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.header__serach:hover{
+    height: 39px;
+    width: 310px;
+    
+}
+
+.header__serach::placeholder{
+    font-family: Kurale;
+    font-size: large;
+}
+
+.header__user__information{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__photo{
+    
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+}
+
+.user_name{
+    color: white;
+}
+
+.header__user__information img, div{
+    transition: 1s;
+}
+
+.header__user__information:hover img{
+    transform: translateX(-5px);
+}
+
+.header__user__information:hover div{
+    scale: 1.1;
+}
+/*-------------------------------header--------------------------*/
+
+/*-------------------------------main----------------------------*/
+.background{
+    background-color: rgba(255, 255, 255, 0.5);
+    max-height: 100%;
+}
+
+.registration-wrapper{
+    max-height: 100%;
+    padding: 60px;
+    
+}
+
+.registration-block-container{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    padding-top: 15%;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regist-text{
+    font-size: 70px;
+    transition: 1s;
+}
+
+.inpt{
+    height: 55px;
+    width: 90%;
+    border-radius: 30px;
+    text-indent: 10px;
+    font-size: 20px;
+    font-family: Kurale;
+    outline: 0 !important;
+    transition: 1s;
+}
+
+.inpt:hover{
+    scale: 1.05;
+}
+
+.login-part{
+    margin-top: 10%;
+}
+
+.password-part{
+    margin-top: 4%;
+}
+
+.inpt::placeholder{
+    font-family: Kurale;
+    font-size: 20px;
+}
+
+
+.confirm-button{
+    background-color: rgba(49, 49, 49, 0.3);
+    margin-top: 8%;
+    margin-bottom: 20%;
+    border-radius: 30px;
+    height: 45px;
+    width: 300px;
+    font-family: Kurale;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.confirm-button:hover{
+    scale: 1.1;
+    background-color: rgba(49, 49, 49, 0.6);
+    color: white;
+}
+
+
+/*-------------------------------main----------------------------*/
+
+/*-------------------------------footer--------------------------*/
+.footer{
+    background-color: rgb(43, 43, 43);
+    padding: 100%;
+}
+/*-------------------------------footer--------------------------*/
+
+/*-----------------------------main style------------------------*/
+
+
+
+
+
+/*-----------------------------adaptive style------------------------*/
+
+@media (max-width: 620px){
+/*-------------------------------header--------------------------*/
+.header__serach{
+    margin-left: 30px;
+    left: 10px;
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    height: 40px;
+    transition: 0.5;
+    text-indent: 5px;
+}
+
+.header__serach:hover{
+    margin-left: 50px;
+    width: 240px;
+}
+
+.header__logo_container{
+    width: 65px;
+}
+
+.header__logo{
+    transition: 0.5s;
+}
+
+.header__logo:hover{
+    margin-left: 5px;
+    scale: 1.1;
+}
+
+.header__user__information{
+    width: 120px;
+    position: relative;
+}
+
+.header__user__information img{
+    transform: translateX(60px);
+    transition: 1s;
+}
+
+.header__user__information div{
+    opacity: 0;
+    transition: 1s;
+}
+
+.header__user__information:hover img{
+    transform: translateX(-8px);
+    z-index: 1;
+}
+
+.header__user__information:hover div{
+    margin-right: 5px;
+    opacity: 1;
+    z-index: 0;
+}
+/*-------------------------------header--------------------------*/
+
+/*-------------------------------main----------------------------*/
+.registration-block-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.regist-text{
+    font-size: 60px;
+}
+
+.chekbox{
+    margin-right: 0;
+}
+
+.registration-wrapper{
+    padding: 0;
+}
+
+.registration-checkbox{
+    font-size: 5%;
+}
+
+.confirm-button{
+    width: 200px;
+}
+
+.footer{
+    padding: 50%;
+}
+
+/*-------------------------------main----------------------------*/
+
+/*-------------------------------footer--------------------------*/
+
+
+
+/*-------------------------------footer--------------------------*/
+}
+
+/*-----------------------------adaptive style------------------------*/
