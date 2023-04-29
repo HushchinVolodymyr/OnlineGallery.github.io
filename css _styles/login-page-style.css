@@ -214,6 +214,10 @@ body{
     transition: 1s;
 }
 
+.go-to-register:hover{
+    scale: 1.1;
+}
+
 .confirm-button{
     background-color: rgba(49, 49, 49, 0.3);
     margin-top: 8%;
