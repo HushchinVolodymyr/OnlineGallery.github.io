@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Kurale;
+}
+
+.wrapper{
+    background-image: url("../images/author-page/background.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position: 0 0;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+._container{
+    max-width: 1033px;
+    margin: 0px auto;
+}
+
+/* -------------------------main part------------------------------ */
+/* -------------------------header part------------------------------ */
+.header{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.header__logo_container{
+    color: white;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.header__logo{
+    color: white;
+}
+
+.header__logo_container:hover{
+    scale: 1.1;
+}
+
+.header__logo:hover::after{
+    transition: 0.5s;
+}
+
+.search{
+    display: flex;
+}
+
+.header__serach{
+    height: 35px;
+    width: 290px;
+    border-radius: 30px;
+    outline: 0 !important;
+    align-items: center;
+    text-indent: 10px;
+    font-family: Kurale;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.header__serach:hover{
+    height: 39px;
+    width: 310px;
+    
+}
+
+.header__serach::placeholder{
+    font-family: Kurale;
+    font-size: large;
+}
+
+.header__user__information{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__photo{
+    
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+}
+
+.user_name{
+    color: white;
+}
+
+.header__user__information img, div{
+    transition: 1s;
+}
+
+.header__user__information:hover img{
+    transform: translateX(-5px);
+}
+
+.header__user__information:hover div{
+    scale: 1.1;
+}
+
+/* -------------------------header part------------------------------ */
+
+main{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.author-container{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.author-name{
+    padding-top: 15px;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: 1s;
+}
+
+.author-information{
+    justify-content: center;
+    width: 90%;
+}
+
+.picture{
+    justify-content: center;
+}
+
+.author-picture{
+    width: 100%;
+}
+
+.author-text{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    transition: 1s;
+}
+
+
+
+.another-popular-pictures h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    transition: 1s;
+}
+
+.line{
+    padding-top: 20px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.first_picture, .second_picture{
+    max-width: 45%;
+    text-align: center;
+    transition: 1s;
+}
+
+.description_1, .description_2{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.pic{
+    max-width: 100%;
+}
+
+
+
+
+/* -------------------------main part------------------------------ */
+/* ------------------footer----------------- */
+.footer{
+    background-color: rgb(43, 43, 43);
+    padding: 150px;
+}
+/* ------------------footer----------------- */
+/* -------------------------adaptive part------------------------------ */
+@media (max-width: 620px){
+
+.wrapper{
+    background-position: 0 0;
+}
+/* -------------------------header part------------------------------ */
+.header__serach{
+    margin-left: 30px;
+    left: 10px;
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    height: 40px;
+    transition: 0.5;
+    text-indent: 5px;
+}
+
+.header__serach:hover{
+    margin-left: 50px;
+    width: 240px;
+}
+
+.header__logo_container{
+    width: 65px;
+}
+
+.header__logo{
+    transition: 0.5s;
+}
+
+.header__logo:hover{
+    margin-left: 5px;
+    scale: 1.1;
+}
+
+.header__user__information{
+    width: 120px;
+    position: relative;
+}
+
+.header__user__information img{
+    transform: translateX(60px);
+    transition: 1s;
+}
+
+.header__user__information div{
+    opacity: 0;
+    transition: 1s;
+}
+
+.header__user__information:hover img{
+    transform: translateX(-8px);
+    z-index: 1;
+}
+
+.header__user__information:hover div{
+    margin-right: 5px;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* -------------------------header part------------------------------ */
+
+.author-name{
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.author-information{
+    width: 100%;
+}
+
+.author-text{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.line{
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+.another-popular-pictures h2{
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.discp p{
+    font-size: 20px;
+}
+
+.description_1, .description_2{
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.first_picture, .second_picture{
+    max-width: 47%;
+    text-align: center;
+}
+
+/* ------------------footer----------------- */
+.footer{
+    padding: 50%;
+}
+
+/* ------------------footer----------------- */
+
+
+
+}
+/* -------------------------adaptive part------------------------------ */
