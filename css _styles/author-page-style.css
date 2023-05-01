@@ -314,7 +314,7 @@ main{
 }
 
 .line{
-    padding-top: 10px;
+    padding-top: 20px;
     max-width: 100%;
 }
 
@@ -328,7 +328,7 @@ main{
 }
 
 .description_1, .description_2{
-    padding-top: 0;
+    padding-top: 10;
     padding-bottom: 10px;
     font-size: 15px;
 }
